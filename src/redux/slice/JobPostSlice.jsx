@@ -77,7 +77,7 @@ export const FetchAddjobpost= createAsyncThunk('fetchAddjobpostdata',async(data)
 
         try{
     
-            const res= await axiosIntence.delete(`http://localhost:9900/api/jobpost/delete/${id}`)
+            const res= await axiosIntence.delete(`jobpost/delete/${id}`)
             return res
             
             

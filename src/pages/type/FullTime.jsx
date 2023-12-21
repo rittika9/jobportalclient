@@ -131,7 +131,7 @@ const FullTime = () => {
                             <img className="flex-shrink-0 img-fluid border rounded" src={`${imageUrl}/${item.image}`} alt style={{ width: 80, height: 80 }} />
 
                             <div className="text-start ps-4">
-                              <h5 className="mb-3">{item.category.title}</h5>
+                            <h5 className="mb-3">{item.category[0]?.title}</h5>
                               <p className="text-truncate me-3">{item.companyname}</p>
 
                               <span className="text-truncate me-3"><i className="fa fa-map-marker-alt text-primary me-2" />{item.location}</span>

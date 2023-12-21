@@ -68,7 +68,7 @@ const Category = () => {
               <h6 className="mb-3">{c.title}</h6>
               </div>
               <div className='col col-md-4'>
-              <a className="btn btn-light btn-square me-3" href={`http://localhost:9900/api/like/${c._id}`}><i className="far fa-heart text-primary" />{c?.like} </a>
+              <a className="btn btn-light btn-square me-3" href={`like/${c._id}`}><i className="far fa-heart text-primary" />{c?.like} </a>
               </div>
             </div>
             {/* <h6 className="mb-3">{c.title}</h6> */}
