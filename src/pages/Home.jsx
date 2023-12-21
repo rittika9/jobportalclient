@@ -187,7 +187,7 @@ const Home = () => {
   </div>
   {/* About End */}
   {/* Jobs Start */}
-  <div className="container-xxl py-5">
+  {/* <div className="container-xxl py-5">
     <div className="container">
       <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
       <div className="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
@@ -521,7 +521,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  </div>
+  </div> */}
   {/* Jobs End */}
   {/* Testimonial Start */}
   <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
