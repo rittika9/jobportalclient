@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {  FetchParttimejobFind } from '../../redux/slice/TypeSlice'
 import CategorySidebar from '../CategorySidebar'
 import moment from 'moment'
+import { imageUrl } from '../../api/ImageUrl'
 
 const PartTime = () => {
 
