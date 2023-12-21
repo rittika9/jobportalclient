@@ -30,6 +30,7 @@ export const loginRequest = createAsyncThunk("loginuser", async (data) => {
   try {
     const res = await axiosInstance.post("loginuser", data);
     console.log(res)
+    toast(res?.data?.message);
     return res;
 
   } catch (error) {
@@ -44,6 +45,7 @@ export const loginemployerRequest  = createAsyncThunk("loginEmployer", async (da
   try {
     const res = await axiosInstance.post("loginemployer", data);
     console.log("employee data----",res)
+    toast(res?.data?.message);
     return res;
   } catch (error) {
     toast(error?.response?.data?.message);
