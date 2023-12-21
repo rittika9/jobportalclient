@@ -73,21 +73,21 @@ export const FetchAddjobpost= createAsyncThunk('fetchAddjobpostdata',async(data)
 
 
 
-    export const FetchDetete=async (id)=>{
+    // export const FetchDetete=async (id)=>{
 
-        try{
+    //     try{
     
-            const res= await axiosIntence.delete(`jobpost/delete/${id}`)
-            return res
+    //         const res= await axiosIntence.delete(`jobpost/delete/${id}`)
+    //         return res
             
             
-                }catch(error){
-                    console.log("error")
-                }
+    //             }catch(error){
+    //                 console.log("error")
+    //             }
 
 
 
-    }
+    // }
 
 
 

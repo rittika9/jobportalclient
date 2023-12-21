@@ -2,9 +2,7 @@
 
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { FetchDetete, Fetchjobpost } from '../../redux/slice/JobPostSlice'
-import { Link } from 'react-router-dom'
-import { toast } from 'react-toastify'
+import {  Fetchjobpost } from '../../redux/slice/JobPostSlice'
 import { imageUrl } from '../../api/ImageUrl'
 
 
@@ -25,13 +23,13 @@ dispatch(Fetchjobpost())
 
       console.log("jobpost",jobpost_data)
 
-const deleteUserData=async(id)=>{
-await FetchDetete(id)
-dispatch(Fetchjobpost())
+// const deleteUserData=async(id)=>{
+// await FetchDetete(id)
+// dispatch(Fetchjobpost())
 
-toast.error('delete successfully')
+// toast.error('delete successfully')
     
-}
+// }
 
 
 
@@ -143,7 +141,7 @@ toast.error('delete successfully')
 
                 )}
 
-<td><Link onClick={() => deleteUserData(item._id)} className='btn btn-danger'>Delete</Link></td> 
+{/* <td><Link onClick={() => deleteUserData(item._id)} className='btn btn-danger'>Delete</Link></td>  */}
 
           </a>
         </div>

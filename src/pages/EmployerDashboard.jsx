@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { FetchEmployerDashboard } from '../redux/slice/Employer_DashboardSlice';
+import { FetchDelete, FetchEmployerDashboard } from '../redux/slice/Employer_DashboardSlice';
 import { imageUrl } from '../api/ImageUrl';
+import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const EmployerDashboard = () => {
 
@@ -19,6 +21,18 @@ const EmployerDashboard = () => {
     console.log('employerdashboard',employerdashboard_data);
     
   
+    const deleteUserData=async(id)=>{
+      await FetchDelete(id)
+      dispatch(FetchEmployerDashboard())
+      
+      toast.error('delete successfully')
+          
+      }
+
+
+
+
+    
   
     const name = localStorage.getItem("name");
     const email = localStorage.getItem("email");
@@ -83,6 +97,8 @@ const EmployerDashboard = () => {
                                   <h4 className="" href>total applicant:<span className='text-primary' >{item.apply?.length}</span></h4>
 
                                   </div>
+                                  <td><Link onClick={() => deleteUserData(item._id)} className='btn btn-danger'>Delete</Link></td> 
+
                                 </div>
                               </div>
                             </div>

@@ -22,7 +22,21 @@ return res?.data
 })
 
 
+export const FetchDelete=async (id)=>{
 
+    try{
+
+        const res= await axiosInstance.delete(`employerpost/delete/${id}`)
+        return res
+        
+        
+            }catch(error){
+                console.log("error")
+            }
+
+
+
+}
 
 const initialState={
     employerdashboard_data:[],
