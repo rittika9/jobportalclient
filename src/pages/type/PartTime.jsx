@@ -125,7 +125,7 @@ const PartTime = () => {
                         <div className="row g-4">
                           <div className="col-sm-12 col-md-8 d-flex align-items-center">
                             {/* <img className="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt style={{width: 80, height: 80}} /> */}
-                            <img className="flex-shrink-0 img-fluid border rounded" src={`http://localhost:9900/${item.image}`} alt style={{ width: 80, height: 80 }} />
+                            <img className="flex-shrink-0 img-fluid border rounded" src={`${imageUrl}/${item.image}`} alt style={{ width: 80, height: 80 }} />
 
                             <div className="text-start ps-4">
                               <h5 className="mb-3">{item.category[0]?.title}</h5>

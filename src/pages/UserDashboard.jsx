@@ -34,7 +34,7 @@ const UserDashboard = () => {
     <div className="container" >
       <div className="row g-5"style={{marginLeft:"60px"}}>
         <div className="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-        <img src={`http://localhost:9900/${image}`} height={"200px"}/>
+        <img src={`${imageUrl}/${image}`}  height={"200px"}/>
         <h2 className="text-primary me-3" >{name}</h2>
         <h4 className="text-primary me-3" >{email}</h4>
         <h4 className="text-primary me-3" >{phone}</h4>

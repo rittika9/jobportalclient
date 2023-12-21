@@ -358,6 +358,8 @@ const employer_id=localStorage.getItem("id")
                                     {categorysidebar_data?.data?.map((item, index) => {
                                         return (
                                             <>
+                                             <option className="form-control"> choose type</option>
+
                                                 <option className="form-control" value={item._id} > {item.title}</option>
 
                                             </>
