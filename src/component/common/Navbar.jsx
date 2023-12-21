@@ -2,7 +2,7 @@ import React from 'react'
 import { logout } from '../../redux/slice/UserAuthSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink, Navigate } from 'react-router-dom'
-
+import {imageUrl} from "../../api/ImageUrl"
 
 
 const Navbar = () => {
@@ -71,7 +71,7 @@ const Navbar = () => {
                <div className="nav-item dropdown">
                <Link className="nav-link dropdown-toggle" to="">
     {/* <img src={image} className="rounded-circle"/> */}
-    <img src={`http://localhost:9900/${image}`} className="rounded-circle" height={"35px"}/>
+    <img src={`${imageUrl}/${image}`}      className="rounded-circle" height={"35px"}/>
     Hi..{name}
 </Link> 
                     <div className="dropdown-menu rounded-0 m-0">

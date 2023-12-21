@@ -98,6 +98,7 @@ import EmployerLogin from '../pages/auth/EmployerLogin';
 import EmployerDashboard from '../pages/EmployerDashboard';
 import FullTime from '../pages/type/FullTime';
 import PartTime from '../pages/type/PartTime';
+import Intern from '../pages/type/Intern';
 // import CandidateLogin from '../pages/auth/CandidateLogin';
 
 
@@ -157,6 +158,10 @@ const App_route = () => {
     {
       path: '/parttime',
       Component: <PartTime/>
+    },
+    {
+      path: '/intern',
+      Component: <Intern/>
     },
     {
       path: '/apply/:id',

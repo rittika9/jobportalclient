@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { FetchFulltimejobFind } from '../../redux/slice/TypeSlice'
 import CategorySidebar from '../CategorySidebar'
 import moment from 'moment'
+import { imageUrl } from '../../api/ImageUrl'
 
 const FullTime = () => {
 
@@ -75,12 +76,18 @@ const FullTime = () => {
 
 
           <li className="nav-item">
-          <a className="d-flex align-items-center text-start mx-3 pb-3"  href="/fulltime" ><h6 className="mt-n1 mb-0">Full Time</h6></a>
+          <a className="d-flex align-items-center text-start mx-3 pb-3 active" data-bs-toggle="pill" href="/fulltime" ><h6 className="mt-n1 mb-0">Full Time</h6></a>
          </li>
 
           <li className="nav-item">
             <a className="d-flex align-items-center text-start mx-3 me-0 pb-3"  href="/parttime">
               <h6 className="mt-n1 mb-0">Part Time</h6>
+            </a>
+          </li>
+
+          <li className="nav-item">
+            <a className="d-flex align-items-center text-start mx-3 me-0 pb-3"  href="/intern">
+              <h6 className="mt-n1 mb-0">Intern</h6>
             </a>
           </li>
         </ul>
@@ -121,7 +128,7 @@ const FullTime = () => {
                         <div className="row g-4">
                           <div className="col-sm-12 col-md-8 d-flex align-items-center">
                             {/* <img className="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt style={{width: 80, height: 80}} /> */}
-                            <img className="flex-shrink-0 img-fluid border rounded" src={`http://localhost:9900/${item.image}`} alt style={{ width: 80, height: 80 }} />
+                            <img className="flex-shrink-0 img-fluid border rounded" src={`${imageUrl}/${item.image}`} alt style={{ width: 80, height: 80 }} />
 
                             <div className="text-start ps-4">
                               <h5 className="mb-3">{item.category.title}</h5>

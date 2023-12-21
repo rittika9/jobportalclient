@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import {  FetchParttimejobFind } from '../../redux/slice/TypeSlice'
-import CategorySidebar from '../CategorySidebar'
-import moment from 'moment'
+import React from "react"
+import { useEffect, useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { FetchInternjobFind } from "../../redux/slice/TypeSlice"
+import CategorySidebar from "../CategorySidebar"
+import moment from "moment"
 
-const PartTime = () => {
 
+
+
+const Intern = () => {
     const [visible, setVisible] = useState(3)
 
     const showMoreItems = () => {
@@ -14,17 +17,14 @@ const PartTime = () => {
   
 
 
-    const{type_data}=useSelector((state)=>state?.type )
+    const{type_data}=useSelector((state)=>state?.type)
   
     const dispatch=useDispatch()
     useEffect(()=>{
-      dispatch((FetchParttimejobFind()))
+      dispatch((FetchInternjobFind()))
      
     },[])
-    console.log('c',type_data);
-    
-
-
+    console.log('intern--->',type_data);
   return (
     <>
     
@@ -74,16 +74,18 @@ const PartTime = () => {
 
 
           <li className="nav-item">
-          <a className="d-flex align-items-center text-start mx-3 pb-3"  href="/fulltime" ><h6 className="mt-n1 mb-0">Full Time</h6></a>
+          <a className="d-flex align-items-center text-start mx-3 pb-3"  href="/fulltime" >
+            <h6 className="mt-n1 mb-0">Full Time</h6>
+            </a>
          </li>
 
-         <li className="nav-item">
-            <a className="d-flex align-items-center text-start mx-3 me-0 pb-3 active" data-bs-toggle="pill" href="/parttime">
+          <li className="nav-item">
+            <a className="d-flex align-items-center text-start mx-3 me-0 pb-3" href="/parttime">
               <h6 className="mt-n1 mb-0">Part Time</h6>
             </a>
           </li>
           <li className="nav-item">
-            <a className="d-flex align-items-center text-start mx-3 me-0 pb-3"  href="/intern">
+            <a className="d-flex align-items-center text-start mx-3 me-0 pb-3 active" data-bs-toggle="pill" href="/intern">
               <h6 className="mt-n1 mb-0">Intern</h6>
             </a>
           </li>
@@ -168,7 +170,9 @@ const PartTime = () => {
   {/* Footer End */}
   {/* Back to Top */}
   <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up" /></a>
-</div>
+</div> 
+    
+    
     
     
     
@@ -177,4 +181,4 @@ const PartTime = () => {
   )
 }
 
-export default PartTime
+export default Intern

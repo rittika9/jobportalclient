@@ -56,24 +56,24 @@ const CategoryDetails = () => {
   {/* Job Detail Start */}
   <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div className="container">
-      <div className="row gy-5 gx-4">
+      <div className="row gy-5 gx-4 align-items-center">
 
-        <div className="col-lg-8">
+        {/* <div className="col-lg-8"> */}
 
         <div>
           <img src= {`${imageUrl}/${categoryDetails_data?.image}`}    className=' w-100 h-100' alt="" />
           </div>
-          <div className="d-flex align-items-center mb-5">
+          {/* <div className="d-flex align-items-center mb-5"> */}
            
             {/* <img className="flex-shrink-0 img-fluid border rounded" src="/img/com-logo-2.jpg" alt style={{width: 80, height: 80}} /> */}
 
-            <div className="text-start ps-4">
-              <h3 className="mb-3">{categoryDetails_data?.title}</h3>
+            <div className="text-start " >
+              <h3 className="mb-3"style={{textAlign:"center"}}>{categoryDetails_data?.title}</h3>
               {/* <span className="text-truncate me-3"><i className="fa fa-map-marker-alt text-primary me-2" />New York, USA</span>
               <span className="text-truncate me-3"><i className="far fa-clock text-primary me-2" />Full Time</span>
               <span className="text-truncate me-0"><i className="far fa-money-bill-alt text-primary me-2" />$123 - $456</span> */}
             </div>
-          </div>
+          {/* </div> */}
           <div className="mb-5">
             {/* <h4 className="mb-3">Job description</h4> */}
             <h4 className="mb-3">Introduction:</h4>
@@ -82,26 +82,6 @@ const CategoryDetails = () => {
    
             <p>{categoryDetails_data?.content}</p>
                        
-
-
-            {/* <h4 className="mb-3">Responsibility</h4>
-            <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
-            <ul className="list-unstyled">
-              <li><i className="fa fa-angle-right text-primary me-2" />Dolor justo tempor duo ipsum accusam</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Elitr stet dolor vero clita labore gubergren</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Rebum vero dolores dolores elitr</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Est voluptua et sanctus at sanctus erat</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Diam diam stet erat no est est</li>
-            </ul>
-            <h4 className="mb-3">Qualifications</h4>
-            <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
-            <ul className="list-unstyled">
-              <li><i className="fa fa-angle-right text-primary me-2" />Dolor justo tempor duo ipsum accusam</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Elitr stet dolor vero clita labore gubergren</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Rebum vero dolores dolores elitr</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Est voluptua et sanctus at sanctus erat</li>
-              <li><i className="fa fa-angle-right text-primary me-2" />Diam diam stet erat no est est</li>
-            </ul> */}
           </div>
 
 
@@ -137,7 +117,7 @@ const CategoryDetails = () => {
             </form>
           </div> */}
 
-        </div>
+        {/* </div> */}
         
         {/* <div className="col-lg-4">
           <div className="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">

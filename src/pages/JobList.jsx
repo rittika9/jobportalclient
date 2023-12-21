@@ -78,14 +78,6 @@ const JobList = () => {
                   </a>
                 </li>
 
-
-                {/* <li className="nav-item">
-                  <a className="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="/fulltime">
-                    <h6 className="mt-n1 mb-0">Full Time</h6>
-                  </a>
-                </li> */}
-
-
                 <li className="nav-item">
                 <a className="d-flex align-items-center text-start mx-3 pb-3"  href="/fulltime" ><h6 className="mt-n1 mb-0">Full Time</h6></a>
                </li>
@@ -93,6 +85,12 @@ const JobList = () => {
                 <li className="nav-item">
                   <a className="d-flex align-items-center text-start mx-3 me-0 pb-3"  href="/parttime">
                     <h6 className="mt-n1 mb-0">Part Time</h6>
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="d-flex align-items-center text-start mx-3 me-0 pb-3"  href="/intern">
+                    <h6 className="mt-n1 mb-0">Intern</h6>
                   </a>
                 </li>
               </ul>
