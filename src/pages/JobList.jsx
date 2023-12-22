@@ -69,6 +69,8 @@ const JobList = () => {
         {/* Jobs Start */}
         <div className="container-xxl py-5">
           <div className="container">
+          <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Are you looking for a new opportunity?</h1>
+
             <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
             <div className="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
               <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">

@@ -99,10 +99,11 @@ dispatch(Fetchjobpost())
   
   <div className="container-xxl py-5">
     <div className="container">
-        <h1>Add some more information</h1>
-    <div>
+    <h1>Make your next hire with <span style={{color: '#32CD32'}}>𝒿𝑜𝒷</span>𝓔𝓷𝓽𝓻𝔂</h1>
+        <h5>We can help you expand your reach and get your jobs in front of the right candidates.</h5> 
+           <div>
 {/* <button className="btn btn-primary w-45" type="submit">Apply Now</button> */}
-<a href='/add-post-job' className='btn btn-primary w-45'type="submit">Add Job</a>
+<a href='/add-post-job' className='btn btn-primary w-45'type="submit">Post a New Job</a>
 </div>
       <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job post List</h1>
       <div className="row g-4">
@@ -136,7 +137,7 @@ dispatch(Fetchjobpost())
               : (
                <div>
   <h4> <span style={{color: 'rgb(233, 14, 14)'}}>↻</span>Pending</h4>
-  <h6>please wait a few days..... </h6>
+  <h6>please wait a few minute..... </h6>
 </div>
 
                 )}

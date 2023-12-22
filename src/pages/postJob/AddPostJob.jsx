@@ -290,7 +290,7 @@ const employer_id=localStorage.getItem("id")
 
                     <div className='resigter'>
                         <form onSubmit={SubmitInfo} className="form">
-                            <div className="title">ADD JOB DESCTIPTION</div>
+                            <div className="title">ADD the JOB requirements to your post </div>
 
 
                             <div className='row'>
@@ -354,11 +354,11 @@ const employer_id=localStorage.getItem("id")
                             <div>
                                 <label> Category type : </label>
                                 <select name="category" value={user.category} onChange={e => postUserData(e)}>
+                                <option className="form-control"> choose Category type</option>
 
                                     {categorysidebar_data?.data?.map((item, index) => {
                                         return (
                                             <>
-                                             <option className="form-control"> choose type</option>
 
                                                 <option className="form-control" value={item._id} > {item.title}</option>
 
@@ -451,7 +451,7 @@ const employer_id=localStorage.getItem("id")
                             <div>
                                 <button type="submit" className="submit"> Add Job </button>
                                 <br />
-                                <Link to="/" className='btn submit'>Cancle</Link>
+                                <Link to="/post-job-list" className='btn submit'>Cancle</Link>
 
                             </div>
                         </form>

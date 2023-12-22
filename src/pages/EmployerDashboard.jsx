@@ -60,7 +60,10 @@ const EmployerDashboard = () => {
         {/* <h2 className="text-primary me-3" >{name}</h2>
         <h4 className="text-primary me-3" >{email}</h4>
         <h4 className="text-primary me-3" >{phone}</h4> */}
-          
+          <div>
+          <li><a href="/"><i class="fa fa-home" aria-hidden="true">Home</i></a></li>
+                    <li><a href="/post-job-list"><i class="fa fa-tasks"> Post more Job</i></a></li>
+          </div>
         </div>
         <div className="col-lg-8 wow fadeIn" data-wow-delay="0.5s">
           <h1 className="mb-4">Your Post JOB list:</h1>

@@ -39,7 +39,10 @@ const UserDashboard = () => {
         <h4 className="text-primary me-3" >NAME:<span>{name}</span></h4>
         <h5 className="text-primary me-3" >EMAIL:{email}</h5>
         <h5 className="text-primary me-3" >PHONE NO.:{phone}</h5>
-
+        <div>
+          <li><a href="/"><i class="fa fa-home" aria-hidden="true">Home</i></a></li>
+                    <li><a href="/job-list"><i class="fa fa-tasks"> Find more Job</i></a></li>
+          </div>
           
         </div>
         <div className="col-lg-8 wow fadeIn" data-wow-delay="0.5s">

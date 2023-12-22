@@ -150,7 +150,8 @@ const log=()=>{
                   </div>
                   <h5 ><a className="small text-muted-success" href="#!">Forgot password?</a></h5>
                   <p className="mb-5 pb-lg-2" style={{color: '#393f81'}}>Don't have an account? <Link onClick={log} to="/register" style={{color: '#FF0000'}}>Register here</Link></p>
-                  
+                  <p className="mb-5 pb-lg-2" style={{color: '#393f81'}}>Are you Candidate? <Link onClick={log} to="/login" style={{color: '#FF0000'}}>Candidate</Link></p>
+
                 </form>
               </div>
             </div>
